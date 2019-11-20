@@ -1,1 +1,159 @@
 # README
+
+
+#include<iostream>
+using namespace std;
+int main() {
+	double result;
+	int numOfPies, numOfPeople;
+	numOfPies = 14;
+	numOfPeople = 3;
+	result = numOfPies/numOfPeople;	
+	cout<<numOfPies<<" pies split up evenly between "<<numOfPeople<<" people.\n";
+	cout<<"Therefore, each person gets "<<result<<" pies.\n";
+	return 0;
+}
+
+
+
+#include<iostream>
+using namespace std;
+
+int main(int argc, char* argv[]) {
+	int i;
+	char c,c2;
+	cout<<"Please enter your favorite character: ";
+	cin.get(c);
+	cout<<"Please enter your second favorite character: ";
+	cin.get(c2);
+	cout<<"The first character you entered is "<<c;
+	cout<<", and the second one is "<<c2<<endl;
+}
+
+#include<iostream>
+using namespace std;
+#include<string>
+int buggy(string s){
+	int counter=-1;
+	while(counter<s.length()) 
+		counter++;
+	return counter;
+}
+int main(){
+	string s = “Charlotte and Marlene are angels.”; 
+	cout<<buggy(s)<<endl;
+	return 0;
+}
+
+#include<iostream>
+using namespace std;
+int main(){
+	int shape;
+	double degree,transition;
+	shape=17;
+	transition=100.0/shape;
+	degree=0;
+	while(true){
+		if(degree>100.0){
+			cout<<degree<<" is greater than 100.0\n";
+			break;
+		}
+		else if(degree<100.0)
+			cout<<degree<<" is smaller than 100.0\n";
+		else
+			cout<<degree<<" is equal to 100.0\n";
+		degree+=transition;
+	}
+	return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	char c;
+	int counter = 0;
+	cout << "Enter anything up until you enter a newline: ";
+	cin >> c;
+	while(c!='\n') {
+		counter++;
+		cin >> c;
+	}
+	cout << "You entered " << counter << " characters.\n";
+	return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n){
+	if(n%2==0) return false;
+	int m=3;
+	while(m*m<n){
+		if(n%m==0) return false;
+		m += 2;
+	}
+	return true;
+}
+
+
+int main(){
+	int input;
+	cout<<"Please enter an integer: ";
+	cin>>input;
+	if(isPrime(input))
+		cout<<input<<" is a prime number.\n";
+	else
+		cout<<input<<" is not a prime number.\n";
+	return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+
+int factorial(int n){
+	int p=1;
+	int i=n;
+/* compute p = n * (n-1) * (n-2) * ... * 2 */
+	while(i>=2);
+	{
+		i--;
+		p=*i;
+	}
+	return i;
+}
+int main(){
+	int input;
+	cout<<"Please enter an integer: ";
+	cin>>input;
+	cout<<factorial(input)<<endl;
+	return 0;
+}
+
+#include<iostream>
+using namespace std;
+
+int divide(int dividend, int divisor) {
+	int result;
+	result = dividend / divisor;
+	return result;
+}
+
+
+int main(){
+	int a, b, c;
+	cout<<"Enter first integer: ";
+	cin>>a;
+	cout<<"Enter second integer: ";
+	cin>>b;
+	c = divide(a, b);
+	cout<<a<<" divided by "<<b<<" is "<<c<<endl;
+	return 0;
+}
+
+
+
